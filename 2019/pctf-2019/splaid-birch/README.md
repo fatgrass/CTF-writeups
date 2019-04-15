@@ -70,7 +70,7 @@ void find_and_add(struct sp *tree, unsigned long incr, unsigned long x, unsigned
 }
 ```
 
-By using this functionality, we can get a write primitive. By overwriting the tcache head to a pointer we can get a node allocated at an unsorted bin, and when we get the `x` value of it we get a libc address. 
+By using this functionality, we can get a write primitive. By overwriting the tcache head to an unsorted bin we can get a node allocated at an unsorted bin, and when we get the `x` value of it we get a libc address. 
 
 # Getting a shell
 
